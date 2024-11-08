@@ -39,14 +39,14 @@ export default function Background() {
           onClick={() =>
             handleLinkClick("https://www.linkedin.com/in/milosz-w/")
           }
-          className="p-4 bg-slate-800 text-white rounded-full"
+          className="p-4 bg-slate-800 text-white rounded-full hover:bg-slate-900"
         >
           <SiLinkedin className="w-6 h-6 text-white" /> {/* LinkedIn Icon */}
         </button>
 
         <button
           onClick={() => handleLinkClick("https://github.com/MiloszWrobel")}
-          className="p-4 bg-slate-800 text-white rounded-full"
+          className="p-4 bg-slate-800 text-white rounded-full hover:bg-slate-900"
         >
           <SiGithub className="w-6 h-6 text-white" /> {/* GitHub Icon */}
         </button>
@@ -54,7 +54,7 @@ export default function Background() {
 
       <button
         onClick={handleScrollClick}
-        className="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 p-4 bg-slate-800 text-white rounded-full"
+        className="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 p-4 bg-slate-800 text-white rounded-full hover:bg-slate-900"
         style={{ top: "85vh" }}
       >
         <ChevronDownIcon className="w-6 h-4 text-white" />

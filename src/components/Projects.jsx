@@ -1,3 +1,12 @@
-export default function Projects() {
-  <p>Bishg</p>;
+export default function Projects({ image, title }) {
+  return (
+    <div className="flex justify-center items-center">
+      <button className=" place-self-center  ">
+        <div className="transform transition-transform duration-200 hover:scale-125 flex flex-col items-center">
+          <img src={image} className="size-60 place-self-center" />
+          <p className="text-2xl text-stone-900  place-self-center">{title}</p>
+        </div>
+      </button>
+    </div>
+  );
 }
