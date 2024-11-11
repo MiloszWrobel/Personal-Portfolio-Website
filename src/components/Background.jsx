@@ -20,12 +20,11 @@ export default function Background() {
       <img
         src={image}
         alt="background"
-        className="w-full object-cover"
+        className="w-full object-cover saturate-80"
         style={{ height: "100vh" }}
       />
-
       <h2
-        className=" bg-slate-800 text-white text-5xl bg-origin-border border-4 border-slate-800 rounded-2xl p-6 absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+        className=" absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-5xl font-bold text-white bg-slate-800 rounded-2xl bg-opacity-70 p-2 border-slate-800 border-2 "
         style={{ top: "50vh" }}
       >
         Milosz Wrobel

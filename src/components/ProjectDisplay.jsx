@@ -17,6 +17,10 @@ export default function ProjectDisplay({ projectId, onReturn }) {
     });
   }
 
+  function handleLinkClick(link) {
+    window.open(link, "_blank");
+  }
+
   return (
     <div className="min-h-screen bg-slate-300 relative  ">
       <h1 className=" absolute left-1/2 transform -translate-x-1/2 top-4 text-6xl text-stone-900 ">
@@ -30,7 +34,7 @@ export default function ProjectDisplay({ projectId, onReturn }) {
       </button>
       <div className="flex justify-center items-center pt-28 space-x-2">
         <button
-          className=" w-1/4 transform scale-80 blur-sm hover:blur-none "
+          className=" w-1/4 transform scale-80  hover:blur-none "
           onClick={() => handleSwap("left")}
         >
           <img
@@ -47,7 +51,7 @@ export default function ProjectDisplay({ projectId, onReturn }) {
         </div>
 
         <button
-          className=" w-1/4 transform scale-80 blur-sm hover:blur-none "
+          className=" w-1/4 transform scale-80  hover:blur-none "
           onClick={() => handleSwap("right")}
         >
           <img
@@ -60,11 +64,12 @@ export default function ProjectDisplay({ projectId, onReturn }) {
         <h2 className="text-4xl font-semibold text-stone-900 border-b-4 border-stone-700 inline-block mb-4">
           {WEBSITES[projectId - 1].title}
         </h2>
-        <p className="text-lg text-stone-800 leading-relaxed mt-4 border-2 border-slate-700 p-4">
-          {WEBSITES[projectId - 1].text}
-        </p>
+        <div
+          dangerouslySetInnerHTML={{ __html: WEBSITES[projectId - 1].text }}
+          className="text-lg text-stone-800 leading-relaxed mt-4 border-2 border-slate-700 p-4"
+        ></div>
         <button
-          onClick={() => handleLinkClick("https://github.com/MiloszWrobel")}
+          onClick={() => handleLinkClick(WEBSITES[projectId - 1].gitHubLink)}
           className="p-4 bg-slate-800 text-white rounded-full hover:bg-slate-900 mt-4 mb-4"
         >
           <SiGithub className="w-6 h-6 text-white " /> {/* GitHub Icon */}
