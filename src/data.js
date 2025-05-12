@@ -1,4 +1,3 @@
-import managmentLogo from "./assets/no-projects.png";
 import TTTLogo from "./assets/New-Logo.png";
 import portLogo from "./assets/portfolio-logo.jpg";
 import reactLogo from "./assets/react-logo.png";
