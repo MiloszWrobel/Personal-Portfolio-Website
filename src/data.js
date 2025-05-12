@@ -9,6 +9,20 @@ import a2 from "./assets/a2.png";
 import a3 from "./assets/a3.png";
 import a4 from "./assets/a4.png";
 import a5 from "./assets/a5.png";
+import b1 from "./assets/b1.png";
+import b2 from "./assets/b2.png";
+import b3 from "./assets/b3.png";
+import b4 from "./assets/b4.png";
+import c1 from "./assets/c1.png";
+import d1 from "./assets/d1.png";
+import d2 from "./assets/d2.png";
+import d3 from "./assets/d3.png";
+import d4 from "./assets/d4.png";
+import e1 from "./assets/e1.png";
+import e2 from "./assets/e2.png";
+import e3 from "./assets/e3.png";
+import e4 from "./assets/e4.png";
+import e5 from "./assets/e5.png";
 
 export default [
   {
@@ -37,7 +51,7 @@ export default [
     id: 2,
     image: reactLogo,
     title: "React Websites",
-    displayImages: [managmentLogo, TTTLogo, portLogo, a4, a5],
+    displayImages: [b1, b2, b3, b4],
     text: `<p> This is a collection of various React projects that I have created during my learning journey. 
     
     All of these projects originated from following a React course, so while they are not my own ideas, completing them has taught me all the essential skills that I later used to create my own projects. 
@@ -53,7 +67,7 @@ export default [
     id: 3,
     image: portLogo,
     title: "Portfolio website",
-    displayImages: [managmentLogo, TTTLogo, portLogo, a4, a5],
+    displayImages: [c1, c1, c1],
     text: `<p> This is my portfolio website, which I created to showcase my projects and skills.
     I wanted to create a simple and clean design that would allow visitors to easily navigate through my work and learn more about me.<p>
     <br> 
@@ -67,7 +81,7 @@ export default [
     id: 4,
     image: redBaboonLogo,
     title: "RedBaboon",
-    displayImages: [managmentLogo, TTTLogo, portLogo, a4, a5],
+    displayImages: [d1, d2, d3, d4],
     text: `<p>RedBaboon is a climbing tracker app that I developed with a friend. 
     While climbing, we wanted a way to log our climbs on the go to track our progress over time. Although plenty of existing apps offer this functionality, we decided to take on the challenge of building our own.</p>  
     
@@ -87,7 +101,7 @@ export default [
     id: 5,
     image: ffLogo,
     title: "Funky Friday",
-    displayImages: [managmentLogo, TTTLogo, portLogo, a4, a5],
+    displayImages: [e1, e2, e3, e4, e5],
     text: `<p>FunkyFriday is a unique album rating app with a simple premise: you can't see any album's rating until you've rated it yourself. We developed this idea after realising how much people's perceptions can be skewed by seeing overall ratings beforehand.</p>
     <br>
     <p>With FunkyFriday, we aimed to apply everything we learned from RedBaboon while taking our development to the next level. While similar in some ways (again hosted on Vercel, using MongoDB and Next.js), we adopted a more professional approach this time. We implemented agile methodologies, using Excalidraw for UX design where we mapped out user journeys, discussed features, and planned functionality before implementation.</p>

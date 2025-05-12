@@ -46,7 +46,7 @@ export default function ProjectDisplay({ projectId, onReturn }) {
         <div className=" w-1/2 transform scale-100">
           <img
             src={imageArray[1]}
-            className="object-cover w-full h-[600px] max-w-full border-slate-700 border-2"
+            className="object-cover w-auto h-[600px] max-w-full border-slate-700 border-2 justify-self-center"
           />
         </div>
 
