@@ -72,7 +72,7 @@ export default function ProjectDisplay({ projectId, onReturn }) {
           onClick={() => handleLinkClick(WEBSITES[projectId - 1].gitHubLink)}
           className="p-4 bg-slate-800 text-white rounded-full hover:bg-slate-900 mt-4 mb-4"
         >
-          <SiGithub className="w-6 h-6 text-white " /> {/* GitHub Icon */}
+          <SiGithub className="w-6 h-6 text-white " />
         </button>
         <button
           className=" absolute bottom-4 right-4 text-2xl text-stone-50 place-self-center justify-end bg-slate-800 rounded-xl p-2 hover:bg-slate-900 hover:text-stone-100 "

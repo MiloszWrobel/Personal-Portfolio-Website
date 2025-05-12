@@ -1,14 +1,14 @@
 import managmentLogo from "./assets/no-projects.png";
 import TTTLogo from "./assets/New-Logo.png";
-import calculatorLogo from "./assets/investment-calculator-logo.png";
 import portLogo from "./assets/portfolio-logo.jpg";
+import reactLogo from "./assets/react-logo.png";
+import ffLogo from "./assets/ff-logo.png";
+import redBaboonLogo from "./assets/redbaboon-logo.png";
 import a1 from "./assets/a1.png";
 import a2 from "./assets/a2.png";
 import a3 from "./assets/a3.png";
 import a4 from "./assets/a4.png";
 import a5 from "./assets/a5.png";
-
-import quizLogo from "./assets/quiz-logo.png";
 
 export default [
   {
@@ -35,26 +35,68 @@ export default [
   },
   {
     id: 2,
-    image: calculatorLogo,
-    title: "Investment Calculator",
+    image: reactLogo,
+    title: "React Websites",
     displayImages: [managmentLogo, TTTLogo, portLogo, a4, a5],
+    text: `<p> This is a collection of various React projects that I have created during my learning journey. 
+    
+    All of these projects originated from following a React course, so while they are not my own ideas, completing them has taught me all the essential skills that I later used to create my own projects. 
+    
+    Each project showcases different aspects of React development, from simple components to more complex applications. 
+    
+    Some are simple websites, such as calculators, while others are more advanced, such as the Tic Tac Toe game with an AI opponent. 
+    
+    </p> <br/> <p> You can follow the button below to take a look at all of these projects on my GitHub page.</p>`,
+    gitHubLink: "https://github.com/MiloszWrobel?tab=repositories",
   },
   {
     id: 3,
-    image: managmentLogo,
-    title: "Project Managment",
-    displayImages: [managmentLogo, TTTLogo, portLogo, a4, a5],
-  },
-  {
-    id: 4,
     image: portLogo,
     title: "Portfolio website",
     displayImages: [managmentLogo, TTTLogo, portLogo, a4, a5],
+    text: `<p> This is my portfolio website, which I created to showcase my projects and skills.
+    I wanted to create a simple and clean design that would allow visitors to easily navigate through my work and learn more about me.<p>
+    <br> 
+    <p>During my university studies, I primarily programmed in Java. While JavaScript and Java share some similarities, developing websites in React presented a significant challenge for me. This motivated me to invest in a dedicated React course to strengthen my skills.</p>
+    <br>
+    <p>After building various projects through the course, this portfolio represents one of my first completely independent web development projects
+    created without tutorials or external guidance. I added an extra challenge by implementing all styling using Tailwind CSS rather than traditional CSS, pushing myself to learn this modern utility-first framework.</p>
+  `,
+  },
+  {
+    id: 4,
+    image: redBaboonLogo,
+    title: "RedBaboon",
+    displayImages: [managmentLogo, TTTLogo, portLogo, a4, a5],
+    text: `<p>RedBaboon is a climbing tracker app that I developed with a friend. 
+    While climbing, we wanted a way to log our climbs on the go to track our progress over time. Although plenty of existing apps offer this functionality, we decided to take on the challenge of building our own.</p>  
+    
+    <br>  
+
+    <p>Since we climb as a group, we already had at least eight test users who provided valuable feedback during development. 
+    The app is hosted on Vercel and uses MongoDB as the database, with Google Auth for login functionality.</p>  
+    <br>  
+    <p>We collaborated on the app, gradually adding features such as climb logging, user posts, analytics, and climb/post management (editing and deleting). This was my first time working with Next.js, and it taught me a lot about the framework’s structure. We designed the app with mobile-first in mind since climbers typically log routes on their phones while bouldering so it’s optimised for smaller screens.</p>  
+    <br>  
+    <p>Developing RedBaboon was both a rewarding and enjoyable experience. In fact, we enjoyed it so much that we took our collaboration further by working on our next project: Funky Friday.</p>  
+    <br>  
+    <p>Click the button below to explore the app yourself.</p>`,
+    gitHubLink: "https://redbaboon.vercel.app",
   },
   {
     id: 5,
-    image: quizLogo,
-    title: "Quiz Website",
+    image: ffLogo,
+    title: "Funky Friday",
     displayImages: [managmentLogo, TTTLogo, portLogo, a4, a5],
+    text: `<p>FunkyFriday is a unique album rating app with a simple premise: you can't see any album's rating until you've rated it yourself. We developed this idea after realising how much people's perceptions can be skewed by seeing overall ratings beforehand.</p>
+    <br>
+    <p>With FunkyFriday, we aimed to apply everything we learned from RedBaboon while taking our development to the next level. While similar in some ways (again hosted on Vercel, using MongoDB and Next.js), we adopted a more professional approach this time. We implemented agile methodologies, using Excalidraw for UX design where we mapped out user journeys, discussed features, and planned functionality before implementation.</p>
+    <br>
+    <p>After finalising the UX design, we used Jira's Kanban board to create epics and break them down into manageable tickets. We assigned tickets to each other, working both independently and through pair programming sessions. Each feature went through GitHub pull requests with code reviews before merging into master - establishing a proper development workflow.</p>
+    <br>
+    <p>We maintain weekly standups to review progress and plan upcoming work. This represents the most professional project I've worked on to date, and it's still actively evolving. I'm applying all my university knowledge and past experience to this ongoing development, and I'm excited to see where we take it as we're still in the early stages of production.</p>
+    <br>
+    <p>Click the button below to explore the app yourself.</p>`,
+    gitHubLink: "https://funkyfriday.vercel.app",
   },
 ];
