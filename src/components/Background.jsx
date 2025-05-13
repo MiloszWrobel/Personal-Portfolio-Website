@@ -1,9 +1,8 @@
 import { ChevronDownIcon } from "@heroicons/react/24/outline";
 import { SiLinkedin, SiGithub } from "react-icons/si";
+import cityImage from "../assets/city.png";
 
 export default function Background() {
-  const image = "/src/assets/city.png";
-
   function handleScrollClick() {
     window.scrollBy({
       top: window.innerHeight,
@@ -18,7 +17,7 @@ export default function Background() {
   return (
     <div className="relative min-h-screen w-screen">
       <img
-        src={image}
+        src={cityImage}
         alt="background"
         className="w-full object-cover saturate-80"
         style={{ height: "100vh" }}
