@@ -13,6 +13,8 @@ import b2 from "./assets/b2.png";
 import b3 from "./assets/b3.png";
 import b4 from "./assets/b4.png";
 import c1 from "./assets/c1.png";
+import c2 from "./assets/c2.png";
+import c3 from "./assets/c3.png";
 import d1 from "./assets/d1.png";
 import d2 from "./assets/d2.png";
 import d3 from "./assets/d3.png";
@@ -66,15 +68,16 @@ export default [
     id: 3,
     image: portLogo,
     title: "Portfolio website",
-    displayImages: [c1, c1, c1],
+    displayImages: [c1, c2, c3],
     text: `<p> This is my portfolio website, which I created to showcase my projects and skills.
     I wanted to create a simple and clean design that would allow visitors to easily navigate through my work and learn more about me.<p>
     <br> 
     <p>During my university studies, I primarily programmed in Java. While JavaScript and Java share some similarities, developing websites in React presented a significant challenge for me. This motivated me to invest in a dedicated React course to strengthen my skills.</p>
     <br>
     <p>After building various projects through the course, this portfolio represents one of my first completely independent web development projects
-    created without tutorials or external guidance. I added an extra challenge by implementing all styling using Tailwind CSS rather than traditional CSS, pushing myself to learn this modern utility-first framework.</p>
+    created without tutorials or external guidance. I added an extra challenge by implementing all styling using Tailwind CSS rather than traditional CSS, pushing myself to learn this modern utility-first framework. This is also the first website that I made that was deployed using vercel.</p>
   `,
+    gitHubLink: "https://milosz-wrobel.vercel.app",
   },
   {
     id: 4,

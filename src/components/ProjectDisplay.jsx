@@ -68,19 +68,20 @@ export default function ProjectDisplay({ projectId, onReturn }) {
           dangerouslySetInnerHTML={{ __html: WEBSITES[projectId - 1].text }}
           className="text-lg text-stone-800 leading-relaxed mt-4 border-2 border-slate-700 p-4"
         ></div>
+
         <button
           onClick={() => handleLinkClick(WEBSITES[projectId - 1].gitHubLink)}
           className="p-4 bg-slate-800 text-white rounded-full hover:bg-slate-900 mt-4 mb-4"
         >
           <SiGithub className="w-6 h-6 text-white " />
         </button>
+
         <button
-          className=" absolute bottom-4 right-4 text-2xl text-stone-50 place-self-center justify-end bg-slate-800 rounded-xl p-2 hover:bg-slate-900 hover:text-stone-100 "
+          className=" absolute bottom-4 right-4 text-2xl text-stone-50 place-self-center justify-end mt-4 bg-slate-800 rounded-xl p-2 hover:bg-slate-900 hover:text-stone-100 "
           onClick={onReturn}
         >
           Back To Menu
         </button>
-        <button></button>
       </div>
     </div>
   );
